@@ -1,0 +1,125 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "cep": "13086-902",
+            "logradouro": "Rua Doutor Ricardo Benetton Martins",
+            "complemento": "s/n",
+            "bairro": "Polo II de Alta Tecnologia (Campinas)",
+            "localidade": "Campinas",
+            "uf": "SP",
+            "unidade": "",
+            "ibge": "3509502",
+            "gia": "2446"
+        }
+    ],
+    "required": [
+        "cep",
+        "logradouro",
+        "complemento",
+        "bairro",
+        "localidade",
+        "uf",
+        "unidade",
+        "ibge",
+        "gia"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "cep": {
+            "$id": "#/properties/cep",
+            "type": "string",
+            "title": "The cep schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "13086-902"
+            ]
+        },
+        "logradouro": {
+            "$id": "#/properties/logradouro",
+            "type": "string",
+            "title": "The logradouro schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Rua Doutor Ricardo Benetton Martins"
+            ]
+        },
+        "complemento": {
+            "$id": "#/properties/complemento",
+            "type": "string",
+            "title": "The complemento schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "s/n"
+            ]
+        },
+        "bairro": {
+            "$id": "#/properties/bairro",
+            "type": "string",
+            "title": "The bairro schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Polo II de Alta Tecnologia (Campinas)"
+            ]
+        },
+        "localidade": {
+            "$id": "#/properties/localidade",
+            "type": "string",
+            "title": "The localidade schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Campinas"
+            ]
+        },
+        "uf": {
+            "$id": "#/properties/uf",
+            "type": "string",
+            "title": "The uf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "SP"
+            ]
+        },
+        "unidade": {
+            "$id": "#/properties/unidade",
+            "type": "string",
+            "title": "The unidade schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "ibge": {
+            "$id": "#/properties/ibge",
+            "type": "string",
+            "title": "The ibge schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "3509502"
+            ]
+        },
+        "gia": {
+            "$id": "#/properties/gia",
+            "type": "string",
+            "title": "The gia schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2446"
+            ]
+        }
+    }
+}
